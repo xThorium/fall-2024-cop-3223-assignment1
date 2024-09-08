@@ -21,13 +21,13 @@ double calculateDistance() {
     scanf("%lf", &y2);
 
     // Calculates the distance using a formula, which then prints it for the user to read
-    double distance = ((x2-x1)*(x2-x1))+((y2-y1)*(y2-y1));
+    distance = ((x2-x1)*(x2-x1))+((y2-y1)*(y2-y1));
     printf("The distance between the two points is: %.4lf", sqrt(distance));
 
     return 0;
     }
 
-double calculatePerimeter(); {
+double calculatePerimeter() {
 
     // Reuses the distance from calculateDistance
     double distance = calculateDistance();
