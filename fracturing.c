@@ -24,7 +24,7 @@ double calculateDistance() {
     distance = ((x2-x1)*(x2-x1))+((y2-y1)*(y2-y1));
     printf("The distance between the two points is: %.4lf", sqrt(distance));
 
-    return 0;
+    return distance;
     }
 
 double calculatePerimeter() {
@@ -37,7 +37,7 @@ double calculatePerimeter() {
     printf("The perimeter of the city encompassed by your request is: %.4lf", perimeter);
 
     // Returns what the difficulty of this functio was to make between 1 - 5
-    return 2;
+    return 2.0;
     }
 
 //double calculateArea();
@@ -52,8 +52,8 @@ double calculatePerimeter() {
 
 int main (int argc, char **argv)
 {
-    double calculateDistance ();
-    double calculatePerimeter ();
+    double distance = calculateDistance ();
+    double perimeter = calculatePerimeter ();
     //calculateArea ();
     //calculateWidth ();
     //calculateHeight ();
