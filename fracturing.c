@@ -58,23 +58,49 @@ double calculateArea() {
 double calculateWidth() {
 
     // Asks the user for new point inputs, not reusing that from previous functions
-    double distance = calculateDistance();
+    double x1, y1, x2, y2;
+
+    printf("Input x1: ");
+    scanf("%lf", &x1);
+    printf("Input y1: ");
+    scanf("%lf", &y1);
+
+    printf("Input x2: ");
+    scanf("%lf", &x2);
+    printf("Input y2: ");
+    scanf("%lf", &y2);
 
     // Calculate Width based on the given x coordinates
     double width = fabs(x2 - x1);
     printf("The width of the city encompassed by your request is: %.4lf\n", width);
 
     // Returns a difficulty rating of the calculateWidth function
-    return 3.0
+    // (I had to learn waht the fabs formula meant)
+    return 3.0;
     }
 
 
 double calculateHeight() {
 
-    double distance = calculateDistance();
+    double x1, y1, x2, y2;
+
+    printf("Input x1: ");
+    scanf("%lf", &x1);
+    printf("Input y1: ");
+    scanf("%lf", &y1);
+
+    printf("Input x2: ");
+    scanf("%lf", &x2);
+    printf("Input y2: ");
+    scanf("%lf", &y2);
 
     double height = fabs(y2 - y1);
     printf("The height of the city encompassed by your request is: %.4lf\n", height);
+
+    // Returns a difficulty rating of the calculateHeight function
+    // (Knowing this is the same as calculateWidth but just using the y-axis made this one much easier to figure out)
+    return 1.0;
+
     }
 
 
