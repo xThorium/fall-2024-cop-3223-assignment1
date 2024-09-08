@@ -20,12 +20,25 @@ double calculateDistance() {
     printf("Input y2: ");
     scanf("%lf", &y2);
 
-    // Returns the distance between two points
-    return distance;
+    // Calculates the distance using a formula, which then prints it for the user to read
+    double distance = ((x2-x1)*(x2-x1))+((y2-y1)*(y2-y1));
+    printf("The distance between the two points is: %.4lf", sqrt(distance));
+
+    return 0;
     }
 
-//double calculatePerimeter();
-//{}
+double calculatePerimeter(); {
+
+    // Reuses the distance from calculateDistance
+    double distance = calculateDistance();
+
+    // Calulcates the permiter, in this case we're assuming it's a perfectly square city
+    double perimeter = distance * 4;
+    printf("The perimeter of the city encompassed by your request is: %.4lf", perimeter);
+
+    // Returns what the difficulty of this functio was to make between 1 - 5
+    return 2;
+    }
 
 //double calculateArea();
 //{}
@@ -39,8 +52,8 @@ double calculateDistance() {
 
 int main (int argc, char **argv)
 {
-    calculateDistance ();
-    //calculatePerimeter ();
+    double calculateDistance ();
+    double calculatePerimeter ();
     //calculateArea ();
     //calculateWidth ();
     //calculateHeight ();
