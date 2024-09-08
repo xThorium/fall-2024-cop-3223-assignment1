@@ -52,7 +52,8 @@ double calculateArea() {
     printf("The area of the city encompassed by your request is: %.4lf\n", area);
 
     // Return a difficulty rating
-    return 1.0;
+    // I took some liberites in just assuming that the shape we're using is a square
+    return 2.5;
     }
 
 double calculateWidth() {
@@ -102,8 +103,6 @@ double calculateHeight() {
     return 1.0;
 
     }
-
-
 
 int main (int argc, char **argv)
 {
