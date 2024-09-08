@@ -20,8 +20,6 @@ double calculateDistance() {
     printf("Input y2: ");
     scanf("%lf", &y2);
 
-    distance = sqrt(pow(x2-x1)+pow(y2-y1));
-
     // Returns the distance between two points
     return distance;
     }
