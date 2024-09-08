@@ -23,7 +23,7 @@ double calculateDistance() {
     distance = ((x2-x1)*(x2-x1))+((y2-y1)*(y2-y1));
 
     // Returns the distance between two points
-    return sqrt(distance);
+    return double sqrt(distance);
     }
 
 //double calculatePerimeter();
